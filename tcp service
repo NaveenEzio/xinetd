@@ -1,0 +1,13 @@
+service misc1
+{
+    disable         = no
+    type            = UNLISTED
+    port            = 1340
+    socket_type     = stream
+    protocol        = tcp
+    wait            = no
+    user            = root
+    server          = /usr/bin/python
+    server_args     = /root/misc/misc1.py
+    instances       = 300
+}
